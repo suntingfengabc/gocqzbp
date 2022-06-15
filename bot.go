@@ -170,7 +170,7 @@ var (
 
 func init() {
 	// 默认昵称
-	adana = flag.String("n", "椛椛", "Set default nickname.")
+	adana = flag.String("n", "艾莉妮", "Set default nickname.")
 	prefix = flag.String("p", "/", "Set command prefix.")
 	gocq.InitBase()
 
@@ -200,7 +200,7 @@ func init() {
 				NickName:      append([]string{*adana}, nicks...),
 				CommandPrefix: *prefix,
 				// SuperUsers 某些功能需要主人权限，可通过以下两种方式修改
-				// SuperUsers: []string{"12345678", "87654321"}, // 通过代码写死的方式添加主人账号
+				// SuperUsers: []string{"1018704464", "2208759733"}, // 通过代码写死的方式添加主人账号
 				SuperUsers: qqs, // 通过命令行参数的方式添加主人账号
 				Driver:     []zero.Driver{f},
 			},
